@@ -1,0 +1,16 @@
+.col-md-12{
+    padding: 0;
+}
+
+.bi-person-circle{
+    padding-right: 10px;
+}
+
+.my-popular-post{
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.row>*{
+    margin-top: 0;
+}
