@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>View Post</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/view.css">
 </head>
 <body>
     <header class="container-fluid">
@@ -22,13 +22,13 @@
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            <a class="nav-link "  href="./index.html">Home</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="/post.html">Featured</a>
+                            <a class="nav-link" href="./post.html">Featured</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="/view.html">View Post</a>
+                            <a class="nav-link active" aria-current="page" href="./view.html">View Post</a>
                           </li>
                           
                         </ul>
@@ -41,160 +41,100 @@
     </header>
     <main class="container mt-5">
       <div class="main_about row">
-        <h4>Cong Minh</h4>
-        <p>Kieu Tuan Dung</p>
-        <div class="col-md-6">
-          <img src="/assets/img/img1.jpeg" alt="" class="img-fluid rounded">
-        </div>
-        <div class="col-md-6">
-          <h4>About</h4>
-          <p class="my-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, laudantium odit aut eveniet ab explicabo quisquam minima assumenda illum? Sequi minima asperiores quis labore, alias iste tempora dolor maxime nemo.</p>
-        </div>
-      </div>
-      <div class="main_featured row mt-5 mb-5">
-        <h4>Featured posts</h4>
-        <div class="col-md">
-          <figure class="figure">
-            <img src="/assets/img/img2.jpeg" class="figure-img img-fluid rounded" alt="...">
-            <figcaption class="figure-caption">A caption for the above image.</figcaption>
-          </figure>
-        </div>
-        <div class="col-md">
-          <figure class="figure">
-            <img src="/assets/img/img3.jpeg" class="figure-img img-fluid rounded" alt="...">
-            <figcaption class="figure-caption">A caption for the above image.</figcaption>
-          </figure>
-        </div>
-        <div class="col-md">
-          <figure class="figure">
-            <img src="/assets/img/img5.jpeg" class="figure-img img-fluid rounded" alt="...">
-            <figcaption class="figure-caption">A caption for the above image.</figcaption>
-          </figure>
-        </div>
-        <div class="col-md"><figure class="figure">
-          <img src="/assets/img/img6.jpeg" class="figure-img img-fluid rounded" alt="...">
-          <figcaption class="figure-caption">A caption for the above image.</figcaption>
-        </figure></div>
-      </div>
-    </main>
-    <section class="posts_slider container">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-md-6">
-                    <h4>Tiltle 1</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet enim modi expedita! Recusandae numquam dolor, vitae sit nobis rem porro deleniti magnam animi doloribus dolores iusto modi asperiores at corrupti?</p>
+          <div class="d-flex align-items-center">
+            <button type="button" class="btn btn-success fw-bold mr-5">New</button>
+            <h4 class="fs-2 ms-3">Post Example</h4>
+          </div>
+            <p class="fs-3 text-muted">Subtitle</p>
+            <div class="col-md-6 mb-5">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/assets/img/img2.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/img/img3.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/img/img5.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
-                  <div class="col-md-6">
-                    <h4>Tiltle 2</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet enim modi expedita! Recusandae numquam dolor, vitae sit nobis rem porro deleniti magnam animi doloribus dolores iusto modi asperiores at corrupti?</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                <div class="col-md-6">
-                  <h4>Tiltle 3</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet enim modi expedita! Recusandae numquam dolor, vitae sit nobis rem porro deleniti magnam animi doloribus dolores iusto modi asperiores at corrupti?</p>
-                </div>
-                <div class="col-md-6">
-                  <h4>Tiltle 4</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet enim modi expedita! Recusandae numquam dolor, vitae sit nobis rem porro deleniti magnam animi doloribus dolores iusto modi asperiores at corrupti?</p>
-                </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                <div class="col-md-6">
-                  <h4>Tiltle 5</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet enim modi expedita! Recusandae numquam dolor, vitae sit nobis rem porro deleniti magnam animi doloribus dolores iusto modi asperiores at corrupti?</p>
-                </div>
-                <div class="col-md-6">
-                  <h4>Tiltle 6</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet enim modi expedita! Recusandae numquam dolor, vitae sit nobis rem porro deleniti magnam animi doloribus dolores iusto modi asperiores at corrupti?</p>
-                </div>
-                </div>
-              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="col-md-6 mb-5">
+              <h1 class="fw-light">Description</h1>
+              <p class="my-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, laudantium odit aut eveniet ab explicabo quisquam minima assumenda illum? Sequi minima asperiores quis labore, alias iste tempora dolor maxime nemo.</p>
+              <h1 class="fw-light">List</h1>
+              <ul>
+                <li>
+                  <a>Item</a>
+                </li>
+                <li>
+                  <a>Item</a>
+                </li>
+                <li>
+                  <a>Item</a>
+                </li>
+                <li>
+                  <a>Item</a>
+                </li>
+              </ul>
+              <h1 class="fw-light">Link</h1>
+              <a href="#">Google.com</a>
+            </div>
+        <hr>    
+        <div class="main_featured row mt-5 mb-5">
+            <h4>Related posts</h4>
+            <div class="col-md">
+              <figure class="figure">
+                <img src="/assets/img/img2.jpeg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+              </figure>
+            </div>
+            <div class="col-md">
+              <figure class="figure">
+                <img src="/assets/img/img3.jpeg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+              </figure>
+            </div>
+            <div class="col-md">
+              <figure class="figure">
+                <img src="/assets/img/img5.jpeg" class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+              </figure>
+            </div>
+            <div class="col-md"><figure class="figure">
+              <img src="/assets/img/img6.jpeg" class="figure-img img-fluid rounded" alt="...">
+              <figcaption class="figure-caption">A caption for the above image.</figcaption>
+            </figure></div>
           </div>
-    </section>
-    <section class="contact mt-5">
-      <div class="container">
-        <div class="row mb-2">
-          <h6>Contact (Your name)</h6>
-        </div>
-        <form>
-          <div class="row mb-4">
-            <div class="col-md-4">
-              <label class="mb-2" for="firstName">First Name</label>
-              <div class="input-group">
-                <input
-                  class="form-control"
-                  type="text"
-                  id="firstName"
-                  value="Cong"
-                />
-              </div>
-            </div>
-            <div class="col-md-4">
-              <label class="mb-2" for="lastName">Last name</label>
-              <div class="input-group">
-                <input
-                  class="form-control"
-                  type="text"
-                  id="lastName"
-                  value="Minh"
-                />
-              </div>
-            </div>
-            <div class="col-md-4">
-              <label class="mb-2" for="username">username</label>
-              <div class="input-group">
-                <span class="input-group-text" id="basic-addon1">@</span>
-                <input type="text" id="username" class="form-control" />
-              </div>
-            </div>
-          </div>
-          <div class="row mb-4">
-            <div class="col-md-6">
-              <label class="mb-2" for="City">City</label>
-              <div class="input-group">
-                <input class="form-control" type="text" id="City" />
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label class="mb-2" for="state">State</label>
-              <select class="form-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-            <div class="col-md-3">
-              <label class="mb-2" for="zip">Zip</label>
-              <div class="input-group">
-                <input class="form-control" type="text" id="zip" />
-              </div>
-            </div>
-          </div>
-          <div class="mb-4">
-            <input class="form-check-input me-1" type="checkbox" id="agree" />
-            <label for="agree">Agreed</label>
-          </div>
-          <button type="button" class="btn btn-primary">Submit Form</button>
-        </form>
       </div>
-    </section>
+      
     
       <footer>
         <div class="container mt-5 bg-light">
